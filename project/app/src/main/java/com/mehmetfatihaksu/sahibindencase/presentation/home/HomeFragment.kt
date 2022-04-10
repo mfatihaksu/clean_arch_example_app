@@ -64,7 +64,7 @@ class HomeFragment : Fragment(), QuestionItemClickListener {
     private fun addLoadStateListener(){
         questionAdapter.addLoadStateListener { loadState ->
             binding?.recyclerViewQuestions?.isVisible = loadState.refresh is LoadState.NotLoading
-            //mainActivity.binding.progressBar.isVisible = loadState.refresh is LoadState.Loading
+            binding?.progressBar?.isVisible = loadState.refresh is LoadState.Loading
             val errorState = loadState.source.append as? LoadState.Error
                 ?: loadState.source.prepend as? LoadState.Error
                 ?: loadState.append as? LoadState.Error

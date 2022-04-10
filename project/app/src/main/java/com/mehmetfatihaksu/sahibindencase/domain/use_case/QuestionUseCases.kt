@@ -4,5 +4,6 @@ import androidx.paging.ExperimentalPagingApi
 
 @ExperimentalPagingApi
 data class QuestionUseCases(
-    val getQuestions : GetQuestions
+    val getQuestions : GetQuestions,
+    val questionDetail : QuestionDetail
 )

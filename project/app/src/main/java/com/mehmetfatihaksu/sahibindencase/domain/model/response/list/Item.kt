@@ -1,4 +1,4 @@
-package com.mehmetfatihaksu.sahibindencase.domain.model.response
+package com.mehmetfatihaksu.sahibindencase.domain.model.response.list
 
 data class Item(
     val accepted_answer_id: Int,

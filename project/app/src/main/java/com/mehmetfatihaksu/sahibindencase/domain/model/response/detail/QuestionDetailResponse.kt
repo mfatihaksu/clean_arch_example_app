@@ -1,6 +1,6 @@
-package com.mehmetfatihaksu.sahibindencase.domain.model.response
+package com.mehmetfatihaksu.sahibindencase.domain.model.response.detail
 
-data class QuestionsResponse(
+data class QuestionDetailResponse(
     val has_more: Boolean,
     val items: List<Item>,
     val quota_max: Int,

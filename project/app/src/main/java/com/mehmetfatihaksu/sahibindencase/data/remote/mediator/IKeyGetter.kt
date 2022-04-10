@@ -2,7 +2,7 @@ package com.mehmetfatihaksu.sahibindencase.data.remote.mediator
 
 import androidx.paging.PagingState
 import com.mehmetfatihaksu.sahibindencase.data.local.entity.Key
-import com.mehmetfatihaksu.sahibindencase.domain.model.response.Item
+import com.mehmetfatihaksu.sahibindencase.domain.model.response.list.Item
 
 interface IKeyGetter {
 

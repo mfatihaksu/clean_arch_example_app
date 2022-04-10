@@ -1,4 +1,4 @@
-package com.mehmetfatihaksu.sahibindencase.domain.model.response
+package com.mehmetfatihaksu.sahibindencase.domain.model.response.list
 
 data class Owner(
     val accept_rate: Int,

@@ -6,7 +6,7 @@ import com.mehmetfatihaksu.sahibindencase.data.local.db.DatabaseHelperImpl
 import com.mehmetfatihaksu.sahibindencase.data.local.entity.Key
 import com.mehmetfatihaksu.sahibindencase.data.remote.mediator.KeyGetter
 import com.mehmetfatihaksu.sahibindencase.domain.model.request.QuestionRequest
-import com.mehmetfatihaksu.sahibindencase.domain.model.response.Item
+import com.mehmetfatihaksu.sahibindencase.domain.model.response.list.Item
 import kotlin.random.Random
 
 class QuestionRequestHelper(private val dbHelper : DatabaseHelperImpl) : IQuestionRequestHelper {

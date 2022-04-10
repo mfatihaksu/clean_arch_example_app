@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.paging.ExperimentalPagingApi
 import androidx.paging.PagingData
 import com.mehmetfatihaksu.sahibindencase.data.rp.AppRepository
-import com.mehmetfatihaksu.sahibindencase.domain.model.response.Item
+import com.mehmetfatihaksu.sahibindencase.domain.model.response.list.Item
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

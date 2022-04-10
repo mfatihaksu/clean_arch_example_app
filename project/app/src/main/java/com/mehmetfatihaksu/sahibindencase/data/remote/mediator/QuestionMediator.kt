@@ -10,7 +10,7 @@ import com.mehmetfatihaksu.sahibindencase.data.local.entity.Key
 import com.mehmetfatihaksu.sahibindencase.data.remote.api.AppApi
 import com.mehmetfatihaksu.sahibindencase.data.remote.mediator.helper.QuestionRequestHelper
 import com.mehmetfatihaksu.sahibindencase.domain.model.request.QuestionRequest
-import com.mehmetfatihaksu.sahibindencase.domain.model.response.Item
+import com.mehmetfatihaksu.sahibindencase.domain.model.response.list.Item
 import retrofit2.HttpException
 import java.io.IOException
 

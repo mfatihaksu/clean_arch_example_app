@@ -5,15 +5,18 @@ import androidx.paging.ExperimentalPagingApi
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
+import com.mehmetfatihaksu.sahibindencase.common.Constants
 import com.mehmetfatihaksu.sahibindencase.data.local.db.DatabaseBuilder
 import com.mehmetfatihaksu.sahibindencase.data.local.db.DatabaseHelperImpl
 import com.mehmetfatihaksu.sahibindencase.data.remote.api.AppApi
 import com.mehmetfatihaksu.sahibindencase.data.remote.mediator.QuestionMediator
 import com.mehmetfatihaksu.sahibindencase.data.remote.mediator.data_source.QuestionDataSource
 import com.mehmetfatihaksu.sahibindencase.domain.model.request.QuestionRequest
-import com.mehmetfatihaksu.sahibindencase.domain.model.response.Item
+import com.mehmetfatihaksu.sahibindencase.domain.model.response.detail.QuestionDetailResponse
+import com.mehmetfatihaksu.sahibindencase.domain.model.response.list.Item
 import com.mehmetfatihaksu.sahibindencase.domain.rp.IAppRepository
 import kotlinx.coroutines.flow.Flow
+import retrofit2.Response
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -44,5 +47,9 @@ class AppRepository @Inject constructor(private val appApi: AppApi) : IAppReposi
                 questionRequest = QuestionRequest(page, pageSize)
             )
         ).flow
+    }
+
+    override suspend fun getQuestionDetail(Id: Int): Response<QuestionDetailResponse> {
+        return appApi.getQuestionDetail(Id, Constants.SITE)
     }
 }

@@ -5,6 +5,7 @@ import com.mehmetfatihaksu.sahibindencase.data.remote.api.ApiBuilder
 import com.mehmetfatihaksu.sahibindencase.data.remote.api.AppApi
 import com.mehmetfatihaksu.sahibindencase.data.rp.AppRepository
 import com.mehmetfatihaksu.sahibindencase.domain.use_case.GetQuestions
+import com.mehmetfatihaksu.sahibindencase.domain.use_case.QuestionDetail
 import com.mehmetfatihaksu.sahibindencase.domain.use_case.QuestionUseCases
 import dagger.Module
 import dagger.Provides
@@ -33,6 +34,6 @@ object AppModule {
     @Provides
     @Singleton
     fun provideQuestionUseCases(appRepository: AppRepository):QuestionUseCases{
-        return QuestionUseCases(getQuestions = GetQuestions(appRepository))
+        return QuestionUseCases(getQuestions = GetQuestions(appRepository), questionDetail = QuestionDetail(appRepository))
     }
 }

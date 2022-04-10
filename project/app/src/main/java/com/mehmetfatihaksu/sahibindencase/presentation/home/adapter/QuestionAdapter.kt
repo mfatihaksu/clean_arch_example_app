@@ -12,10 +12,10 @@ import com.mehmetfatihaksu.sahibindencase.R
 import com.mehmetfatihaksu.sahibindencase.common.Constants
 import com.mehmetfatihaksu.sahibindencase.common.DateTimeConverter
 import com.mehmetfatihaksu.sahibindencase.databinding.ItemQuestionBinding
-import com.mehmetfatihaksu.sahibindencase.domain.model.response.Item
+import com.mehmetfatihaksu.sahibindencase.domain.model.response.list.Item
 import com.mehmetfatihaksu.sahibindencase.presentation.home.listener.QuestionItemClickListener
 
-class QuestionAdapter(private val context: Context, private val questionItemClickListener: QuestionItemClickListener) : PagingDataAdapter<Item , QuestionAdapter.ViewHolder>(QUESTION_COMPARATOR) {
+class QuestionAdapter(private val context: Context, private val questionItemClickListener: QuestionItemClickListener) : PagingDataAdapter<Item, QuestionAdapter.ViewHolder>(QUESTION_COMPARATOR) {
 
     class ViewHolder(private val itemBinding : ItemQuestionBinding , val context: Context, private val questionItemClickListener: QuestionItemClickListener) : RecyclerView.ViewHolder(itemBinding.root){
 

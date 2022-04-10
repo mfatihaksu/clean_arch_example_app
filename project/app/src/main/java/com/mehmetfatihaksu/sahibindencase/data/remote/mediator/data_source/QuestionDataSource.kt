@@ -8,7 +8,7 @@ import com.mehmetfatihaksu.sahibindencase.data.local.entity.Key
 import com.mehmetfatihaksu.sahibindencase.data.remote.api.AppApi
 import com.mehmetfatihaksu.sahibindencase.data.remote.mediator.KeyGetter
 import com.mehmetfatihaksu.sahibindencase.domain.model.request.QuestionRequest
-import com.mehmetfatihaksu.sahibindencase.domain.model.response.Item
+import com.mehmetfatihaksu.sahibindencase.domain.model.response.list.Item
 
 class QuestionDataSource(private val dbHelper : DatabaseHelperImpl, private val appApi : AppApi, private val questionRequest: QuestionRequest) : PagingSource<Int, Item>() {
     override fun getRefreshKey(state: PagingState<Int, Item>): Int? {

@@ -3,7 +3,7 @@ package com.mehmetfatihaksu.sahibindencase.data.remote.mediator
 import androidx.paging.PagingState
 import com.mehmetfatihaksu.sahibindencase.data.local.db.DatabaseHelperImpl
 import com.mehmetfatihaksu.sahibindencase.data.local.entity.Key
-import com.mehmetfatihaksu.sahibindencase.domain.model.response.Item
+import com.mehmetfatihaksu.sahibindencase.domain.model.response.list.Item
 
 class KeyGetter(private val dbHelper : DatabaseHelperImpl): IKeyGetter {
     override fun getRemoteKeyClosestToCurrentPosition(state: PagingState<Int, Item>): Key? {
