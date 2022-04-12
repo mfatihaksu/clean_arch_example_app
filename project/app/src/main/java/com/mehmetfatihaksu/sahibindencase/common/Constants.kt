@@ -14,6 +14,7 @@ class Constants {
         const val SITE = "stackoverflow"
         const val ID = "Id"
         const val LONG_DATE_TIME_FORMAT = "dd.MM.yyyy HH:mm"
+        const val DATE_FORMAT = "dd.MM.yyyy"
 
     }
 }

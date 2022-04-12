@@ -2,4 +2,7 @@
     <string name="app_name">Sahibindencase</string>
     <string name="created_date">Created Date : %1$s</string>
     <string name="answer_count">Answer Count : %1$s</string>
+    <string name="error_title">Error</string>
+    <string name="okay">OK</string>
+    <string name="question_detail">Question Detail</string>
 </resources>
