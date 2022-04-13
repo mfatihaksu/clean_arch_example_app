@@ -2,7 +2,12 @@
     <string name="app_name">Sahibindencase</string>
     <string name="created_date">Created Date : %1$s</string>
     <string name="answer_count">Answer Count : %1$s</string>
-    <string name="error_title">Error</string>
     <string name="okay">OK</string>
     <string name="question_detail">Question Detail</string>
+    <string name="facebook_app_id">977994002851710</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">f47abed86b7a61583b2eb6e0cc7b5bba</string>
+    <string name="facebook_login_canceled">Facebook login canceled</string>
+    <string name="facebook_login_failed">Facebook login failed</string>
+
 </resources>

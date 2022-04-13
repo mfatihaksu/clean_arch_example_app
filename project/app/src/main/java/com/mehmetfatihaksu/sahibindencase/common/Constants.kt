@@ -1,7 +1,6 @@
 package com.mehmetfatihaksu.sahibindencase.common
 
 class Constants {
-
     companion object INSTANCE{
         const val BASE_URL = "https://api.stackexchange.com/2.3/"
         const val QUERY_PAGE ="page"
@@ -15,6 +14,5 @@ class Constants {
         const val ID = "Id"
         const val LONG_DATE_TIME_FORMAT = "dd.MM.yyyy HH:mm"
         const val DATE_FORMAT = "dd.MM.yyyy"
-
     }
 }

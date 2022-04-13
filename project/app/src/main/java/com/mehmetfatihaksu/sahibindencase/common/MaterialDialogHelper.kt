@@ -6,7 +6,6 @@ import com.mehmetfatihaksu.sahibindencase.R
 
 class MaterialDialogHelper {
 
-
     fun showDialog(context: Context, message: String?){
         MaterialAlertDialogBuilder(context).setMessage(message)
             .setPositiveButton(context.getString(R.string.okay)){ dialogInterface, _->

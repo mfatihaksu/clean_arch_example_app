@@ -1,13 +1,11 @@
 package com.mehmetfatihaksu.sahibindencase.presentation.detail
 
-import androidx.annotation.StringRes
 import androidx.lifecycle.ViewModel
 import androidx.paging.ExperimentalPagingApi
 import com.mehmetfatihaksu.sahibindencase.domain.use_case.QuestionUseCases
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 import androidx.lifecycle.viewModelScope
-import com.mehmetfatihaksu.sahibindencase.R
 import com.mehmetfatihaksu.sahibindencase.domain.model.response.detail.QuestionDetailResponse
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -20,7 +18,7 @@ class DetailViewModel @Inject constructor(private val questionUseCases : Questio
 
     sealed class ViewState{
         class ShowLoading(val isShow : Boolean) : ViewState()
-        class ShowErrorMessage(@StringRes val title : Int, val message : String?) : ViewState()
+        class ShowErrorMessage(val message : String?) : ViewState()
         class QuestionLoaded(val response : QuestionDetailResponse) : ViewState()
         object Empty : ViewState()
     }
@@ -36,7 +34,7 @@ class DetailViewModel @Inject constructor(private val questionUseCases : Questio
                 if (response.isSuccessful){
                     _detailUIState.value = ViewState.QuestionLoaded(response.body()!!)
                 }else{
-                    _detailUIState.value = ViewState.ShowErrorMessage(R.string.error_title , response.message())
+                    _detailUIState.value = ViewState.ShowErrorMessage(response.message())
                 }
             }
         }

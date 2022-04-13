@@ -8,6 +8,7 @@ import androidx.paging.ExperimentalPagingApi
 import androidx.paging.PagingData
 import com.mehmetfatihaksu.sahibindencase.domain.model.response.list.Item
 import com.mehmetfatihaksu.sahibindencase.domain.use_case.QuestionUseCases
+import com.mehmetfatihaksu.sahibindencase.presentation.home.state.QuestionsState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject

@@ -1,4 +1,4 @@
-package com.mehmetfatihaksu.sahibindencase.domain.use_case
+package com.mehmetfatihaksu.sahibindencase.domain.use_case.question
 
 import android.content.Context
 import androidx.paging.ExperimentalPagingApi

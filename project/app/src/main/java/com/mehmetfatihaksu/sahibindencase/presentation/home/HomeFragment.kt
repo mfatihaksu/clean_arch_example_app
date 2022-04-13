@@ -84,4 +84,9 @@ class HomeFragment : Fragment(), QuestionItemClickListener {
         bundle.putInt(Constants.ID, Id)
         Navigation.findNavController(requireView()).navigate(R.id.action_homeFragment_to_detailFragment , bundle)
     }
+
+    override fun onDestroyView() {
+        _binding = null
+        super.onDestroyView()
+    }
 }
